@@ -161,7 +161,7 @@
             // FrameGenNumStepper
             // 
             FrameGenNumStepper.Location = new Point(162, 52);
-            FrameGenNumStepper.Maximum = new decimal(new int[] { 1, 0, 0, 0 });
+            FrameGenNumStepper.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
             FrameGenNumStepper.Name = "FrameGenNumStepper";
             FrameGenNumStepper.Size = new Size(80, 23);
             FrameGenNumStepper.TabIndex = 401;
@@ -343,10 +343,10 @@
             TopMenu.BackColor = SystemColors.Window;
             TopMenu.Dock = DockStyle.None;
             TopMenu.Items.AddRange(new ToolStripItem[] { TerminateButton, settingsToolStripMenuItem, aboutToolStripMenuItem });
-            TopMenu.Location = new Point(414, 4);
+            TopMenu.Location = new Point(534, 4);
             TopMenu.Margin = new Padding(0, 0, 0, 8);
             TopMenu.Name = "TopMenu";
-            TopMenu.Size = new Size(355, 24);
+            TopMenu.Size = new Size(235, 24);
             TopMenu.TabIndex = 10;
             TopMenu.Text = "menuStrip1";
             // 

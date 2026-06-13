@@ -5,6 +5,8 @@ namespace VideoConverter.Utils
 {
     public static class AppHelper
     {
+        public static string GetAssemblyVersion() => Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "-";
+
         public static void OpenWebsite(string url)
         {
             Process.Start(new ProcessStartInfo

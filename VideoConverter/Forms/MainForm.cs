@@ -1,4 +1,3 @@
-using System.Reflection;
 using VideoConverter.Config;
 using VideoConverter.Utils;
 using VideoConverter.Video;
@@ -411,15 +410,9 @@ namespace VideoConverter
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string displayText = $"Video Converter\nv{GetVersionText()}\n\nSimple GUI for ffmpeg and ffprobe.\n\n";
+            string displayText = $"Video Converter\nv{AppHelper.GetAssemblyVersion()}\n\nSimple GUI for ffmpeg and ffprobe.\n\n";
             displayText += "by Balázs Vecsey\nVB studio © 2026\nhttp://vbstudio.hu/";
             MessageBox.Show(this, displayText, Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private static string GetVersionText()
-        {
-            var assemblyVersion = AssemblyName.GetAssemblyName(Assembly.GetExecutingAssembly().Location).Version;
-            return assemblyVersion?.ToString() ?? "-";
         }
     }
 }
