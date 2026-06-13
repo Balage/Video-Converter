@@ -32,16 +32,21 @@ This one uses `ffmpeg.exe` to convert a sequence of images to a video. Use the s
 - Settings
 	- **Verbose output**: By default, output console will display a simplified output on the current process. Turn this on to see everything printed by `ffmpeg.exe`. (this is for debugging only)
 	- **Add to Start Menu**: Click to create Start Menu shortcut for the app. Might need to start app with Admin privileges first.
+## Dependencies
+- **.NET Runtime 10.0** required for the GUI to work. App will provide download URL upon launch if requirements are not met. Works on Windows 7 and up.
+- Latest FFmpeg requires **Windows 10 or newer** to run.
+	- Alternatively you can use `ffmpeg-release-essentials`, which does support Windows 7 (https://www.gyan.dev/ffmpeg/builds/).
 
 ## Build Project
 - Download repository.
 - Open `VideoConverter.sln`.
 - Right click on `VideoConverter` project and select `Publish`.
 - Click `Publish` button. This creates a folder named `Release` with the app executable.
-- Download pre-built ffmpeg binaries from https://www.ffmpeg.org/download.html
+- Download latest ffmpeg binaries from https://www.ffmpeg.org/download.html
 	- Alternative link #1: https://github.com/BtbN/FFmpeg-Builds/releases
 	- Alternative link #2: https://www.gyan.dev/ffmpeg/builds/
-- From the `bin` folder copy all exe and dll files to the `Release` folder.
+- If you're using Windows 7, you will need `ffmpeg-release-essentials` instead, since latest version depends on Windows 10 DLL-s. (https://www.gyan.dev/ffmpeg/builds/).
+- Copy all exe and dll files from `bin` folder to `Release` folder.
 - Run `VideoConverter.exe` and enjoy!
 ## License
 MIT

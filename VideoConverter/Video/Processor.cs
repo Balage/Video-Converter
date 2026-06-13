@@ -122,8 +122,6 @@ namespace VideoConverter.Video
 
                 string tempLastFrame = Path.Combine(Path.GetDirectoryName(files[0]) ?? "", "temp.png");
                 File.Copy(files[0], tempLastFrame, true);
-
-
                 files = [.. files, tempLastFrame];
             }*/
 
@@ -169,10 +167,9 @@ namespace VideoConverter.Video
                 //filterComplex = $"{backgroundFilter},minterpolate=fps={targetFps}:me_mode=bidir,tblend=all_mode=average,framestep={fpsMul}"
 
                 // Looping
-                if (_args.GenFrameLoop)
+                if (_args.GenFrameLoop) // TODO: Figure out how to make this work
                 {
                     //filterComplex = $"{filterComplex},select=between(n\\,0\\,{totalFrames - 2}),setpts=PTS-STARTPTS";
-
                     //filterComplex = $"{filterComplex},trim=end_frame={totalFrames - 2}";
                 }
             }
