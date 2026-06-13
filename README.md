@@ -1,5 +1,5 @@
-# Video-Converter
-Simple GUI for [ffmpeg and ffprobe](https://www.ffmpeg.org/). I wrote this app because I got fed up with all the video converters out there being full of ads, and trying to put features that should be free behind a paywall.
+# Video Converter
+Simple GUI for [FFmpeg](https://www.ffmpeg.org/). I wrote this app because I got fed up with all the video converters out there being full of ads, and trying to put features that should be free behind a paywall.
 
 [FFmpeg](https://www.ffmpeg.org/) is a free library, but lacks a GUI, so I made one with the options I usually use. Feel free to modify this app for your own specific use-cases, or just to use as is. Built binaries are also available for download.
 ## How to Use
