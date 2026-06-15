@@ -42,11 +42,11 @@ This one uses `ffmpeg.exe` to convert a sequence of images to a video. Use the s
 - Open `VideoConverter.sln`.
 - Right click on `VideoConverter` project and select `Publish`.
 - Click `Publish` button. This creates a folder named `Release` with the app executable.
-- Download latest ffmpeg binaries from https://www.ffmpeg.org/download.html
+- Download latest FFmpeg binaries from https://www.ffmpeg.org/download.html
 	- Alternative link #1: https://github.com/BtbN/FFmpeg-Builds/releases
 	- Alternative link #2: https://www.gyan.dev/ffmpeg/builds/
 - If you're using Windows 7, you will need `ffmpeg-release-essentials` instead, since latest version depends on Windows 10 DLL-s. (https://www.gyan.dev/ffmpeg/builds/).
-- Copy all exe and dll files from `bin` folder to `Release` folder.
+- Copy all `.exe` and `.dll` files from the `bin` folder into the `Release` folder.
 - Run `VideoConverter.exe` and enjoy!
 ## License
 MIT
